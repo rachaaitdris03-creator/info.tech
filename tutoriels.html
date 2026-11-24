@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoriels — info.tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>info<span class="accent">.tech</span></span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tutoriels.html" class="active">Tutoriels</a></li>
+        <li><a href="bases.html">Les bases</a></li>
+        <li><a href="coder.html">Coder</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="bases.html#quiz" class="btn btn-primary">Tester mes connaissances</a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Bibliothèque pratique</p>
+        <h1>Tous les tutoriels</h1>
+        <p>Filtrez par thème pour trouver la solution adaptée à votre besoin.</p>
+      </div>
+
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="Astuces PC">Astuces PC</button>
+        <button class="filter-btn" data-filter="Sécurité">Sécurité</button>
+        <button class="filter-btn" data-filter="Internet">Internet</button>
+        <button class="filter-btn" data-filter="Codage">Codage</button>
+      </div>
+
+      <div class="cards-grid" id="tutorials-grid">
+        <article class="tuto-card" data-category="Astuces PC" id="raccourcis">
+          <img src="https://cdn-cms.f-static.com/ready_uploads/media/2958908/800_5e14d42442e9a.jpg" alt="Raccourcis clavier">
+          <div class="tuto-body">
+            <span class="tag">Astuces PC • 5 min</span>
+            <h3>10 raccourcis clavier qui changent la vie</h3>
+            <p>Maîtrisez Ctrl+C, Ctrl+Z, Windows+D, Windows+L et Alt+Tab pour naviguer sans lâcher le clavier.</p>
+          </div>
+        </article>
+
+        <article class="tuto-card" data-category="Astuces PC" id="accelerer-pc">
+          <img src="https://cdn-cms.f-static.com/ready_uploads/media/4474/800_5cda47ab96367.jpg" alt="Accélérer son PC">
+          <div class="tuto-body">
+            <span class="tag">Astuces PC • 8 min</span>
+            <h3>Accélérer un PC lent en 5 étapes</h3>
+            <p>Désactivez les applications inutiles au démarrage et libérez de l'espace sur le disque principal.</p>
+          </div>
+        </article>
+
+        <article class="tuto-card" data-category="Astuces PC" id="fichiers-dossiers">
+          <img src="https://static.s123-cdn-static-d.com/ready_uploads/media/13034504/800_655add570267b.jpg" alt="Fichiers et dossiers">
+          <div class="tuto-body">
+            <span class="tag">Astuces PC • 6 min</span>
+            <h3>Comprendre les fichiers et les dossiers</h3>
+            <p>Organisez vos documents avec la nomenclature AAAA-MM-JJ_nom pour un classement automatique.</p>
+          </div>
+        </article>
+
+        <article class="tuto-card" data-category="Sécurité">
+          <div class="tuto-body">
+            <span class="tag">Sécurité • 7 min</span>
+            <h3>Créer et gérer des mots de passe inviolables</h3>
+            <p>La méthode des 4 mots aléatoires et l'utilisation d'un gestionnaire de mots de passe gratuit.</p>
+          </div>
+        </article>
+
+        <article class="tuto-card" data-category="Internet">
+          <div class="tuto-body">
+            <span class="tag">Internet • 5 min</span>
+            <h3>Reconnaître un e-mail frauduleux (Phishing)</h3>
+            <p>Vérifier l'adresse de l'expéditeur et survoler les liens avant de cliquer.</p>
+          </div>
+        </article>
+
+        <article class="tuto-card" data-category="Codage">
+          <div class="tuto-body">
+            <span class="tag">Codage • 15 min</span>
+            <h3>Votre première page HTML en 10 lignes</h3>
+            <p>Découvrez les balises essentielles pour structurer un titre, un paragraphe et un bouton.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 info.tech — Apprendre l'informatique, sans jargon.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
